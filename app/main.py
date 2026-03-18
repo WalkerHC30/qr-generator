@@ -1,7 +1,6 @@
 """
 FastAPI 應用程式入口
 
-這裡負責：
 1. 建立 FastAPI app 實例
 2. 用 lifespan 管理啟動/關閉時要做的事（取代舊版 @app.on_event）
 3. 掛載所有 Router

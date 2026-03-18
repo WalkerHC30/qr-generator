@@ -1,7 +1,5 @@
 # QR Code Generator API
 
-> 系統設計練習：從零到百萬級請求
-
 ## 快速開始
 
 ```bash
@@ -26,12 +24,12 @@ uv run pytest tests/ -v
 
 ## 學習進度
 
-| Phase | 主題 | 狀態 |
-|-------|------|------|
-| 1 | FastAPI 基礎建置 & 資料夾結構 | ✅ 進行中 |
-| 2 | QR Code 生成功能 | ⬜ |
-| 3 | SQLite 資料庫整合 | ⬜ |
-| 4 | 百萬請求擴展（Redis、Celery） | ⬜ |
+| Phase | 主題                          | 狀態 |
+| ----- | ----------------------------- | ---- |
+| 1     | FastAPI 基礎建置 & 資料夾結構 | ✅   |
+| 2     | QR Code 生成功能              | ✅   |
+| 3     | SQLite 資料庫整合             | ⬜   |
+| 4     | 百萬請求擴展（Redis、Celery） | ⬜   |
 
 ## 專案結構
 
@@ -58,10 +56,10 @@ qr-generator/
 
 ## API 端點
 
-| 方法 | 路徑 | 說明 |
-|------|------|------|
-| GET | `/health` | 健康檢查 |
-| POST | `/qr/generate` | 生成 QR Code |
-| GET | `/qr/{id}` | 查詢記錄 |
-| GET | `/qr/{id}/image` | 下載圖片 |
-| GET | `/qr/` | 列出所有記錄 |
+| 方法 | 路徑             | 說明         |
+| ---- | ---------------- | ------------ |
+| GET  | `/health`        | 健康檢查     |
+| POST | `/qr/generate`   | 生成 QR Code |
+| GET  | `/qr/{id}`       | 查詢記錄     |
+| GET  | `/qr/{id}/image` | 下載圖片     |
+| GET  | `/qr/`           | 列出所有記錄 |
